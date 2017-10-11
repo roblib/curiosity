@@ -66,7 +66,7 @@ $info = array(
     'drupalSettings' => [
       'color' => [
         // Put the logo path into JavaScript for the live preview.
-        'logo' => theme_get_setting('logo.url', 'socialblue'),
+        'logo' => theme_get_setting('logo.url', 'curiosity'),
       ],
     ],
   ],

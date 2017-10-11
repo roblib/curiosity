@@ -11,7 +11,7 @@ use Drupal\social_font\Entity\Font;
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function socialblue_form_system_theme_settings_alter(&$form, FormStateInterface &$form_state, $form_id = NULL) {
+function curiosity_form_system_theme_settings_alter(&$form, FormStateInterface &$form_state, $form_id = NULL) {
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
     return;
@@ -19,9 +19,9 @@ function socialblue_form_system_theme_settings_alter(&$form, FormStateInterface 
 
   $system_theme_settings = \Drupal::configFactory()->get('system.theme')->get('default');
 
-  // If the default theme is either socialblue or socialsaas then extend
+  // If the default theme is either curiosity or socialsaas then extend
   // the form in the appearance section.
-  if ($system_theme_settings == 'socialblue' || $system_theme_settings == 'socialsaas') {
+  if ($system_theme_settings == 'curiosity' || $system_theme_settings == 'socialsaas') {
     $config = \Drupal::config($system_theme_settings . '.settings');
 
     $form['open_social_settings'] = array(

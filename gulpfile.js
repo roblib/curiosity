@@ -43,7 +43,7 @@ options.rootPath = {
 };
 
 options.theme = {
-  name       : 'socialblue',
+  name       : 'curiosity',
   root       : options.rootPath.theme,
   components : options.rootPath.theme + 'components/',
   build      : options.rootPath.theme + 'assets/',

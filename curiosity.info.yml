@@ -1,5 +1,5 @@
-name: Social Blue theme
-description: Demo theme for Open social installations.
+name: Curiosity
+description: Theme for UPEI's version on 'Open Social'.
 screenshot: screenshot.png
 type: theme
 
@@ -9,76 +9,76 @@ core: 8.x
 version: '1.1'
 
 libraries:
-  - socialblue/brand
-  - socialblue/site-footer
+  - curiosity/brand
+  - curiosity/site-footer
 
 libraries-extend:
   socialbase/base:
-    - socialblue/base
+    - curiosity/base
   socialbase/alert:
-    - socialblue/alert
+    - curiosity/alert
   socialbase/badge:
-    - socialblue/badge
+    - curiosity/badge
   socialbase/button:
-    - socialblue/button
+    - curiosity/button
   socialbase/cards:
-    - socialblue/cards
+    - curiosity/cards
   socialbase/form-controls:
-    - socialblue/form-controls
+    - curiosity/form-controls
   socialbase/list:
-    - socialblue/list
+    - curiosity/list
   socialbase/spinner:
-    - socialblue/spinner
+    - curiosity/spinner
   # Extend molecules
   socialbase/breadcrumb:
-    - socialblue/breadcrumb
+    - curiosity/breadcrumb
   socialbase/dropdown:
-    - socialblue/dropdown
+    - curiosity/dropdown
   socialbase/file:
-      - socialblue/file
+      - curiosity/file
   socialbase/form-elements:
-    - socialblue/form-elements
+    - curiosity/form-elements
   socialbase/form--input-groups:
-    - socialblue/form--input-groups
+    - curiosity/form--input-groups
   socialbase/like:
-    - socialblue/like
+    - curiosity/like
   # attach the datepicker stylesheet to all date fields
   core/drupal.date:
-    - socialblue/form--datepicker
+    - curiosity/form--datepicker
   # extend the core datepicker with a stylesheet
   core/jquery.ui.datepicker:
-    - socialblue/form--timepicker
+    - curiosity/form--timepicker
   socialbase/form--password:
-    - socialblue/form--password
+    - curiosity/form--password
   socialbase/pagination:
-    - socialblue/pagination
+    - curiosity/pagination
   socialbase/popover:
-    - socialblue/popover
+    - curiosity/popover
   socialbase/nav-book:
-    - socialblue/nav-book
+    - curiosity/nav-book
   socialbase/nav-tabs:
-    - socialblue/nav-tabs
+    - curiosity/nav-tabs
   socialbase/navbar:
-    - socialblue/navbar
+    - curiosity/navbar
   socialbase/teaser:
-    - socialblue/teaser
+    - curiosity/teaser
   socialbase/tour:
-    - socialblue/tour
+    - curiosity/tour
   # Extend Organisms
   socialbase/comment:
-    - socialblue/comment
+    - curiosity/comment
   socialbase/hero:
-    - socialblue/hero
+    - curiosity/hero
   socialbase/meta:
-    - socialblue/meta
+    - curiosity/meta
   socialbase/modal:
-    - socialblue/modal
+    - curiosity/modal
   socialbase/offcanvas:
-    - socialblue/offcanvas
+    - curiosity/offcanvas
   socialbase/stream:
-    - socialblue/stream
+    - curiosity/stream
   socialbase/page-node:
-    - socialblue/page-node
+    - curiosity/page-node
 
 ckeditor_stylesheets:
   - assets/css/ckeditor.css
