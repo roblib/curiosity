@@ -30,3 +30,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+
+.stream-item .form-group-inline .help-block {
+  display: none;
+}
