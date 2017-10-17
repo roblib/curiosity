@@ -332,12 +332,42 @@ gulp.task('lint:sass-with-fail', function () {
 gulp.task('watch', ['browser-sync', 'watch:styleguide', 'watch:js']);
 
 gulp.task('browser-sync', ['watch:css'], function () {
+
+// Root assets folder (contains /css/, /js/ etc)
+let ASSETS_DIR         = 'assets';
+// Path on server to remote assets folder (escape the slashes; no trailing slash)
+let REMOTE_ASSETS_PATH = '\/themes\/custom\/curiosity\/assets';
+let REGEX       = new RegExp( REMOTE_ASSETS_PATH, 'g');
+
   if (!options.drupalURL) {
     return Promise.resolve();
   }
   return browserSync.init({
     proxy: options.drupalURL,
-    noOpen: false
+    //noOpen: false
+
+    // proxy live site
+    //proxy: PROXY,
+
+    // modify url of the remote assets so they point to the locally served version
+    rewriteRules: [
+        {
+
+            //match: /REMOTE_ASSETS_PATH/g,
+            match: REGEX,
+            fn: function(matched) { return '' }
+            //match: REGEX,
+            //fn: function (req, res, match) {
+                //return '';
+            //}
+        }
+    ],
+
+    // serve up these local files
+    serveStatic: [ASSETS_DIR],
+
+    // Watch this stuff for changes and inject it if it does
+    files: ASSETS_DIR + '/**'
   });
 });
 
