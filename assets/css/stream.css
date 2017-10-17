@@ -14,3 +14,18 @@
 .teaser--stream:last-child .card-image {
   border-bottom-left-radius: 10px;
 }
+
+.stream-item .form-group-inline {
+  display: block;
+}
+
+.stream-item .form-group-inline .field--name-field-file-attachment {
+  margin: 1rem 0;
+}
+
+.stream-item .form-group-inline .btn--comment-submit {
+  color: white;
+  background-color: #29abe2;
+  border-color: #29abe2;
+  fill: white;
+}

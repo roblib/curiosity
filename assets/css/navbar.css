@@ -131,7 +131,6 @@
 }
 
 .navbar-scrollable:after {
-  background: -webkit-linear-gradient(left, rgba(31, 128, 170, 0), #1f80aa);
   background: linear-gradient(to right, rgba(31, 128, 170, 0), #1f80aa);
 }
 

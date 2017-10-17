@@ -1,22 +1,36 @@
 @import "settings";
 
 .stream-icon-new {
-  background:$brand-secondary;
+    background:$brand-secondary;
 }
 
 .teaser--stream {
 
-  .teaser__image {
-    border-radius: 0;
-  }
-
-  &:last-child {
-    border-bottom-left-radius: $card-border-radius;
-    border-bottom-right-radius: $card-border-radius;
-
-    .card-image {
-      border-bottom-left-radius: $card-border-radius;
+    .teaser__image {
+        border-radius: 0;
     }
-  }
+
+    &:last-child {
+        border-bottom-left-radius: $card-border-radius;
+        border-bottom-right-radius: $card-border-radius;
+
+        .card-image {
+            border-bottom-left-radius: $card-border-radius;
+        }
+    }
 
 }
+
+.stream-item .form-group-inline {
+    display: block;
+    .field--name-field-file-attachment {
+        margin: 1rem 0;
+    }
+    .btn--comment-submit {
+        color: white;
+        background-color: #29abe2;
+        border-color: #29abe2;
+        fill: white;
+    }
+}
+
