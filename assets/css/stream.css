@@ -23,9 +23,10 @@
   margin: 1rem 0;
 }
 
-.stream-item .form-group-inline .btn--comment-submit {
-  color: white;
-  background-color: #29abe2;
-  border-color: #29abe2;
-  fill: white;
+.stream-item .form-group-inline .form-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
